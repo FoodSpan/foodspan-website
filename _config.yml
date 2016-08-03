@@ -10,7 +10,7 @@ title: FoodSpan
 email: matthew.wang@ucc.on.ca
 description: > # this means to ignore newlines until "baseurl:"
   FoodSpan is an amazing service!
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/foodspan" # the subpath of your site, e.g. /blog
 url: "http://matthewwang.me/foodspan" # the base hostname & protocol for your site
 twitter_username: malsf21
 github_username:  malsf21
