@@ -3,14 +3,16 @@ layout: default
 ---
 <div class="container">
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="well">
-      <header class="post-header">
-        <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-      </header>
+    <div class="card">
+      <div class="content">
+        <header class="post-header">
+          <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
+          <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+        </header>
 
-      <div class="post-content" itemprop="articleBody">
-        {{ content }}
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
       </div>
     </div>
   </article>
@@ -20,22 +22,26 @@ layout: default
       <div class="row">
         {% for post in site.posts limit:3 %}
           <div class="col-sm-4">
-            <div class="well">
-              <h4>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
-              </h4>
-              <p>
-                {{post.excerpt}}
-                <a href="{{ post.url | prepend: site.baseurl }}">View full post here.</a>
-              </p>
+            <div class="card">
+              <div class="content">
+                <h4>
+                  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+                </h4>
+                <p>
+                  {{post.excerpt}}
+                  <a href="{{ post.url | prepend: site.baseurl }}">View full post here.</a>
+                </p>
+              </div>
             </div>
           </div>
         {% endfor %}
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="well">
-        <img class="img-rounded img-responsive" src="{{site.baseurl}}/img/sample-ad-1.png" alt="Food Span Advertisement">
+      <div class="card">
+        <div class="content">
+          <img class="img-rounded img-responsive" src="{{site.baseurl}}/img/sample-ad-1.png" alt="Food Span Advertisement">
+        </div>
       </div>
     </div>
   </div>
