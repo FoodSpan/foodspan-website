@@ -1,0 +1,19 @@
+---
+layout: default
+title: FoodSpan Blog
+permalink: /blog/
+---
+<div class="container">
+  <h1 class="title">BlogSpan <small>your one stop shop for FoodSpan news</small></h1>
+    {% for post in site.posts %}
+      <div class="well">
+        <h4>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+        </h4>
+        <p>
+          {{post.excerpt}}
+          <a href="{{ post.url | prepend: site.baseurl }}">View full post here.</a>
+        </p>
+      </div>
+    {% endfor %}
+</div>

@@ -1,46 +1,38 @@
 ---
 layout: default
+title: Welcome to FoodSpan
 ---
 
 <div class="container">
   <div class="jumbotron">
-    <h1>FoodSpan</h1>
-    <p class="lead">
-    Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="img-rounded img-responsive" src="{{site.baseurl}}/img/logo.png" alt="Food Span Logo">
+      </div>
+      <div class="col-sm-8">
+        <h1 class="title">FoodSpan</h1>
+        <p class="lead">
+        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+      </div>
+    </div>
   </div>
   <div class="row">
     <div class="col-sm-8">
       <div class="well">
-        <h1>Blog</h1>
-
+        <h2>Latest BlogSpan Posts</h2>
         <ul class="post-list">
           {% for post in site.posts limit:2 %}
             <li>
               <h4>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
               </h4>
-              <p>{{post.excerpt}}</p>
+              <p>
+                {{post.excerpt}}
+                <a href="{{ post.url | prepend: site.baseurl }}">View full post here.</a>
+              </p>
             </li>
           {% endfor %}
         </ul>
-        <h3>View more here</h3>
-        <!--
-        <nav>
-          <ul class="pager">
-            <li>{% if paginator.previous_page %}
-              <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-            {% else %}
-              <span class="previous">Previous</span>
-            {% endif %}</li>
-            <li><span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span></li>
-            <li>{% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-            {% else %}
-              <span class="next ">Next</span>
-            {% endif %}</li>
-          </ul>
-        </nav>
-        -->
       </div>
     </div>
     <div class="col-sm-4">
@@ -49,21 +41,73 @@ layout: default
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card card-pricing">
+				<div class="content">
+					<h6 class="category text-success">FoodSpan Starter Kit</h6>
+					<h1 class="card-title"><small>$</small>39.99</h1>
+					<ul>
+						<li><i class="material-icons text-success">check</i> FoodSpan Control Panel</li>
+						<li><i class="material-icons text-success">check</i> 10 FoodSpan Tags</li>
+						<li><i class="material-icons text-success">check</i> 10 FoodSpan Displays</li>
+						<li><i class="material-icons text-success">check</i> Lifetime Support</li>
+					</ul>
+					<a href="#" class="btn btn-primary btn-round">
+						Get Started
+					</a>
+				</div>
+			</div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card card-pricing">
+				<div class="content">
+					<h6 class="category text-success">FoodSpan Family Kit</h6>
+					<h1 class="card-title"><small>$</small>59.99</h1>
+					<ul>
+						<li><i class="material-icons text-success">check</i> FoodSpan Control Panel</li>
+						<li><i class="material-icons text-success">check</i> 20 FoodSpan Tags</li>
+						<li><i class="material-icons text-success">check</i> 20 FoodSpan Displays</li>
+						<li><i class="material-icons text-success">check</i> Lifetime Support</li>
+					</ul>
+					<a href="#" class="btn btn-primary btn-round">
+						Get Started
+					</a>
+				</div>
+			</div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card card-pricing">
+				<div class="content">
+					<h6 class="category text-success">FoodSpan Business Kit</h6>
+					<h1 class="card-title"><small>$</small>199.99</h1>
+					<ul>
+						<li><i class="material-icons text-success">check</i> 5 FoodSpan Control Panels</li>
+						<li><i class="material-icons text-success">check</i> 100 FoodSpan Tags</li>
+						<li><i class="material-icons text-success">check</i> 100 FoodSpan Displays</li>
+						<li><i class="material-icons text-success">check</i> Lifetime Support</li>
+					</ul>
+					<a href="#" class="btn btn-primary btn-round">
+						Get Started
+					</a>
+				</div>
+			</div>
+    </div>
+  </div>
   <div class="well">
 		<div class="row">
 			<div class="col-md-6">
 				<h3>Get Tips and Tricks every Week!</h3>
 				<p class="description">
-					Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+					We hate spam as much as you do, and we promise we won't send you any.
 				</p>
 			</div>
 			<div class="col-md-6">
 				<div class="card card-plain card-form-horizontal">
 					<div class="content">
-						<form method="" action="http://demos.creative-tim.com/material-kit-pro/index.html">
+						<form method="" action="#">
 							<div class="row">
 								<div class="col-sm-8">
-
 									<div class="input-group">
 										<span class="input-group-addon">
 											<span class="fa fa-envelope"></span>
