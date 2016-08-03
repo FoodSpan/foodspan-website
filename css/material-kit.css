@@ -14,6 +14,7 @@
 body {
   background-color: #E5E5E5;
   color: #3C4858;
+  padding-top: 100px;
 }
 body.inverse {
   background: #333333;
@@ -4100,7 +4101,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
       &.tag-primary .tagsinput-add{
           color: $primary-color;
       }
-  
+
       &.tag-success .tag{
            background-color: $success-color;
       }
