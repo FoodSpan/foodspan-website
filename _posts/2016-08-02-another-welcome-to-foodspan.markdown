@@ -3,6 +3,7 @@ layout: post
 title:  "Another Welcome to FoodSpan!"
 date:   2016-08-02 21:08:07 -0400
 categories: news
+image: sample-image-2.jpg
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 

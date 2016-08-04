@@ -164,35 +164,27 @@ title: Welcome to FoodSpan
     	</div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-8">
+  {% for post in site.posts limit:1 %}
+  <div class="card card-background" style="background-image: url('{% if post.image %}{{site.baseurl}}/img/blog/{{post.image}}{% else %}{{site.baseurl}}/img/blog/default.png{% endif %}')">
+		<div class="content">
       <div class="card">
         <div class="content">
-          <h2>Latest BlogSpan Posts</h2>
-          <ul class="post-list">
-            {% for post in site.posts limit:2 %}
-              <li>
-                <h4>
-                  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
-                </h4>
-                <p>
-                  {{post.excerpt}}
-                  <a href="{{ post.url | prepend: site.baseurl }}">View full post here.</a>
-                </p>
-              </li>
-            {% endfor %}
-          </ul>
+          <h2>Latest Blog Post</h2>
+					<h6>{{ post.date | date: "%b %-d, %Y" }}</h6>
+					<a href="{{ post.url | prepend: site.baseurl }}">
+						<h3>{{ post.title }}</h3>
+					</a>
+					<p>
+						{{post.excerpt}}
+					</p>
+					<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-simple">
+						<i class="material-icons">subject</i> Read Article
+					</a>
         </div>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="content">
-          <img class="img-rounded img-responsive" src="{{site.baseurl}}/img/sample-ad-1.png" alt="Food Span Advertisement">
-        </div>
-      </div>
-    </div>
-  </div>
+		</div>
+	</div>
+  {% endfor %}
   <div class="card">
     <div class="content">
   		<div class="row">

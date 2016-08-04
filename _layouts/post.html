@@ -4,6 +4,7 @@ layout: default
 <div class="container">
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="card">
+      <img class="img-responsive" alt="Blog Post Image" src="{% if page.image %}{{site.baseurl}}/img/blog/{{page.image}}{% else %}{{site.baseurl}}/img/blog/default.png{% endif %}">
       <div class="content">
         <header class="post-header">
           <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
@@ -16,32 +17,26 @@ layout: default
       </div>
     </div>
   </article>
-  <div class="row">
     <h2>Other cool things!</h2>
-    <div class="col-sm-8">
       <div class="row">
         {% for post in site.posts limit:3 %}
           <div class="col-sm-4">
             <div class="card">
+              <img class="img-responsive" alt="Blog Post Image" src="{% if post.image %}{{site.baseurl}}/img/blog/{{post.image}}{% else %}{{site.baseurl}}/img/blog/default.png{% endif %}">
               <div class="content">
                 <h4>
                   <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
                 </h4>
                 <p>
                   {{post.excerpt}}
-                  <a href="{{ post.url | prepend: site.baseurl }}">View full post here.</a>
+                  <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-simple">
+        						<i class="material-icons">subject</i> Read Article
+        					</a>
                 </p>
               </div>
             </div>
           </div>
         {% endfor %}
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="content">
-          <img class="img-rounded img-responsive" src="{{site.baseurl}}/img/sample-ad-1.png" alt="Food Span Advertisement">
-        </div>
       </div>
     </div>
   </div>

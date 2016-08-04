@@ -7,14 +7,23 @@ permalink: /blog/
   <h1 class="title">BlogSpan <small>your one stop shop for FoodSpan news</small></h1>
     {% for post in site.posts %}
       <div class="card">
-        <div class="content">
-          <h4>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
-          </h4>
-          <p>
-            {{post.excerpt}}
-            <a href="{{ post.url | prepend: site.baseurl }}">View full post here.</a>
-          </p>
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="img-responsive" alt="Blog Post Image" src="{% if post.image %}{{site.baseurl}}/img/blog/{{post.image}}{% else %}{{site.baseurl}}/img/blog/default.png{% endif %}">
+          </div>
+          <div class="col-sm-8">
+            <div class="content">
+              <h4>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+              </h4>
+              <p>
+                {{post.excerpt}}
+                <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-simple">
+      						<i class="material-icons">subject</i> Read Article
+      					</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     {% endfor %}
