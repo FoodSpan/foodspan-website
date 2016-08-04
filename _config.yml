@@ -21,3 +21,9 @@ markdown: kramdown
 # plugins
 gems: [jekyll-paginate]
 paginate: 10
+
+# collections
+
+collections:
+  shop:
+    output: true
