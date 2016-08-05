@@ -1,22 +1,18 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: FoodSpan
 email: matthew.wang@ucc.on.ca
-description: > # this means to ignore newlines until "baseurl:"
+description: > 
   FoodSpan is an amazing service!
-baseurl: "/foodspan" # the subpath of your site, e.g. /blog
-url: "http://matthewwang.me/foodspan" # the base hostname & protocol for your site
+baseurl: "/foodspan"
+url: "http://matthewwang.me/foodspan"
 twitter_username: malsf21
 github_username:  malsf21
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+exclude: [vendor]
 
 # plugins
 gems: [jekyll-paginate]
