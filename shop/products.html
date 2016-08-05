@@ -10,6 +10,32 @@ type: page
       <h2 class="title">FoodSpan Products</h2>
       <h5 class="description">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</h5>
     </div>
+    <div class="row">
+      {% for product in site.shop %}{% unless product.type == 'page' %}
+      <div class="col-sm-4">
+        <div class="card card-product">
+          <div class="card-image">
+            <a href="{{site.baseurl}}/{{product.url}}">
+              <img class="img" src="{% if page.image1 %}{{site.baseurl}}/img/shop/{{page.image1}}{% else %}{{site.baseurl}}/img/shop/default.png{% endif %}" alt="Product Image" />
+            </a>
+          </div>
 
+          <div class="content">
+            <h4 class="card-title">
+              <a href="{{site.baseurl}}/{{product.url}}">{{product.name}}</a>
+            </h4>
+            <div class="card-description">
+              {{product.short}}
+            </div>
+            <div class="footer">
+              <div class="price">
+                <h4>{{product.price}}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endunless %}{% endfor %}
+    </div>
   </div>
 </div>
