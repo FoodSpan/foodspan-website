@@ -14,7 +14,10 @@ permalink: /blog/
           <div class="col-sm-8">
             <div class="content">
               <h4>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h4>
+              <h4>
+                <small>{{ post.date | date: "%b %-d, %Y" }} {% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</small>
               </h4>
               <p>
                 {{post.excerpt}}

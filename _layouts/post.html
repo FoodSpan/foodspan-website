@@ -17,7 +17,7 @@ layout: default
       </div>
     </div>
   </article>
-    <h2>Other cool things!</h2>
+    <h2>Recommended Articles</h2>
       <div class="row">
         {% for post in site.posts limit:3 %}
           <div class="col-sm-4">
@@ -25,8 +25,9 @@ layout: default
               <img class="img-responsive" alt="Blog Post Image" src="{% if post.image %}{{site.baseurl}}/img/blog/{{post.image}}{% else %}{{site.baseurl}}/img/blog/default.png{% endif %}">
               <div class="content">
                 <h4>
-                  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+                  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h4>
+                <h4><small>{{ post.date | date: "%b %-d, %Y" }}</small></h4>
                 <p>
                   {{post.excerpt}}
                   <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-simple">

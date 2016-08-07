@@ -170,7 +170,7 @@ title: Welcome to FoodSpan
       <div class="card">
         <div class="content">
           <h2>Latest Blog Post</h2>
-					<h6>{{ post.date | date: "%b %-d, %Y" }}</h6>
+					<h6>{{ post.date | date: "%b %-d, %Y" }} {% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</h6>
 					<a href="{{ post.url | prepend: site.baseurl }}">
 						<h3>{{ post.title }}</h3>
 					</a>
