@@ -1,7 +1,7 @@
 # Site settings
 title: FoodSpan
 email: matthew.wang@ucc.on.ca
-description: > 
+description: >
   FoodSpan is an amazing service!
 baseurl: "/foodspan"
 url: "http://matthewwang.me/foodspan"
@@ -13,10 +13,6 @@ markdown: kramdown
 kramdown:
   input: GFM
 exclude: [vendor]
-
-# plugins
-gems: [jekyll-paginate]
-paginate: 10
 
 # collections
 
