@@ -2,7 +2,23 @@
 
 [![Build Status](https://travis-ci.org/FoodSpan/foodspan-website.svg?branch=master)](https://travis-ci.org/FoodSpan/foodspan-website)
 
-Here, you can find the code that goes behind making the FoodSpan website as awesome as possible! 
+Here, you can find the code that goes behind making the FoodSpan website as awesome as possible!
+
+## Resources
+
+Here's a list of all the awesome resources we've used to make this FoodSpan Website possible!
+
+* Git and GitHub
+* DigitalOcean LAMP-based Webserver (to host test site)
+* GitHub Pages (to host final site)
+* [jQuery](https://jquery.com/) JavaScript Library
+* [Bootstrap](http://getbootstrap.com) HTML/CSS/JS Framework
+* [Material Kit Bootstrap Theme](http://www.creative-tim.com/product/material-kit)
+* [Font Awesome](http://fontawesome.io) Font Icon Toolkit
+* [Google Material Icons](https://design.google.com/icons/)
+* [Animate.css](https://github.com/daneden/animate.css) CSS Animation Library
+* [Roboto](https://fonts.google.com/specimen/Roboto) and [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab) Fonts
+* In-house graphic designs
 
 ## Setup
 
