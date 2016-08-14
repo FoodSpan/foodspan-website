@@ -8,10 +8,10 @@ permalink: /blog/
     {% for post in site.posts %}
       <div class="card">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-5">
             <img class="img-responsive" alt="Blog Post Image" src="{% if post.image %}{{site.baseurl}}/img/blog/{{post.image}}{% else %}{{site.baseurl}}/img/blog/default.png{% endif %}">
           </div>
-          <div class="col-sm-8">
+          <div class="col-sm-7">
             <div class="content">
               <h4>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }} {% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</small>
