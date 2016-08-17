@@ -5,8 +5,6 @@ description: >
   FoodSpan is an amazing service!
 baseurl: "/foodspan"
 url: "http://matthewwang.me/foodspan"
-twitter_username: malsf21
-github_username:  malsf21
 
 # Build settings
 markdown: kramdown
