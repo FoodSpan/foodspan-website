@@ -103,7 +103,7 @@ layout: shop
       <div class="card card-product">
         <div class="card-image">
           <a href="{{site.baseurl}}/{{product.url}}">
-            <img class="img" src="{% if page.image1 %}{{site.baseurl}}/img/shop/{{page.image1}}{% else %}{{site.baseurl}}/img/shop/default.png{% endif %}" alt="Product Image" />
+            <img class="img" src="{% if product.image1 %}{{site.baseurl}}/img/shop/{{product.image1}}{% else %}{{site.baseurl}}/img/shop/default.png{% endif %}" alt="Product Image" />
           </a>
         </div>
 

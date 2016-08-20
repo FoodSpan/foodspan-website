@@ -125,45 +125,6 @@ title: Welcome to FoodSpan
 			</div>
     </div>
   </div>
-  <div class="card text-center">
-    <div class="content">
-      <h2 class="title">Why our company?</h2>
-      <h5 class="description">FoodSpan is an organisation dedicated first and foremost to its customers: to create an amazing, high quality product; to listen to our customers and continuously improve; and most importantly, to help consumers save on food waste! </h5>
-      <div class="features">
-    		<div class="row">
-    			<div class="col-sm-4">
-    				<div class="info">
-    					<div class="icon icon-info">
-    						<i class="material-icons">message</i>
-    					</div>
-    					<h4 class="info-title">Responsive</h4>
-    					<p>We understand that problems may arise, and we can always improve! We promise to be available for customer feedback 24/7, through social media, our website, or our email, to help you troubleshoot any problems, and to listen to your feedback. In addition, we care about the community: we have our community blog, and routintely respond to social media!</p>
-    				</div>
-    			</div>
-
-    			<div class="col-sm-4">
-    				<div class="info">
-    					<div class="icon icon-primary">
-    						<i class="material-icons">group</i>
-    					</div>
-    					<h4 class="info-title">Dedicated</h4>
-    					<p>We're dedicated to creating an amazing product, and that means we give it our all. Through our community blog, you can discover more about how we make FoodSpan. Through our community engagement, we're dedicated to making our product as great as it can, by listenting to our consumers. Through constantly improving our product, through patches and new versions, we're dedicated to making FoodSpan awesome!</p>
-    				</div>
-    			</div>
-
-    			<div class="col-sm-4">
-    				<div class="info">
-    					<div class="icon icon-danger">
-    						<i class="material-icons">favorite</i>
-    					</div>
-    					<h4 class="info-title">Passionate</h4>
-    					<p>We're passionate about our product, and that's a promise that we stand behind. We initially created FoodSpan to help reduce food waste, and to target food insecurity: a topic that we are passionate about. No matter what, that's our company's vision, and our company's goal. </p>
-    				</div>
-    			</div>
-        </div>
-    	</div>
-    </div>
-  </div>
   {% for post in site.posts limit:1 %}
   <div class="card card-background" style="background-image: url('{% if post.image %}{{site.baseurl}}/img/blog/{{post.image}}{% else %}{{site.baseurl}}/img/blog/default.png{% endif %}')">
 		<div class="content">
