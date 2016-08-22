@@ -3,17 +3,24 @@ layout: default
 title: Welcome to FoodSpan
 ---
 
-<div class="container">
-  <div class="card">
+<div class="container" style="padding-top:10px;">
+  <div class="card" style="background-image: url('{{site.baseurl}}/img/kitchen.jpg');background-size: cover;background-position:center;">
     <div class="content">
-      <div class="row">
-        <div class="col-sm-4">
-          <img class="img-rounded img-responsive" src="{{site.baseurl}}/img/logo.png" alt="Food Span Logo">
+      <div class="row" style="padding-top:50px;">
+        <div class="col-sm-4" style="text-align:right;">
+          <div class="card" style="max-width:50%;margin-left: auto;margin-right: auto;">
+            <img class="img-rounded img-responsive" src="{{site.baseurl}}/img/logo.png" alt="Food Span Logo">
+          </div>
         </div>
         <div class="col-sm-8">
-          <h1 class="title">FoodSpan</h1>
-          <p class="lead">
-          Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+          <div class="card">
+            <div class="content">
+              <h1 class="title">FoodSpan</h1>
+              <p class="lead">
+                FoodSpan works in your kitchen to help you save food, time, and money, simply by swiping and attaching a tag. Not only does your leftover spaghetti not become a science experiment, but you can save hundreds of dollars every year! Plus, FoodSpan is always available using our suite of web and mobile applications, so you always know what's cool in your fridge.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -21,7 +28,7 @@ title: Welcome to FoodSpan
   <div class="card">
     <div class="content">
       <div class="text-center">
-        <h2 class="title">What's FoodSpan?</h2>
+        <h2 class="title">The FoodSpan Core</h2>
         <h5 class="description">FoodSpan features two core aspects: a Control Panel, and a Tag. Using FoodSpan is simple: just attach the tag to your food container, and swipe it past your Control Panel. Then, the Control Panel alerts you to how long food has been in the fridge, and through our companion apps, can tell you when the food is about to expire!</h5>
       </div>
       <div class="row">
@@ -148,35 +155,15 @@ title: Welcome to FoodSpan
   {% endfor %}
   <div class="card">
     <div class="content">
-  		<div class="row">
-  			<div class="col-sm-6">
-  				<h3>Get Tips and Tricks every Week!</h3>
-  				<p class="description">
-  					We hate spam as much as you do, and we promise we won't send you any.
-  				</p>
-  			</div>
-  			<div class="col-sm-6">
-  				<div class="card card-plain card-form-horizontal">
-  					<div class="content">
-  						<form method="" action="#">
-  							<div class="row">
-  								<div class="col-sm-8">
-  									<div class="input-group">
-  										<span class="input-group-addon">
-  											<span class="fa fa-envelope"></span>
-  										</span>
-  										<div class="form-group is-empty"><input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span></div>
-  									</div>
-  								</div>
-  								<div class="col-sm-4">
-  									<button type="button" class="btn btn-rose btn-round btn-block">Subscribe</button>
-  								</div>
-  							</div>
-  						</form>
-  					</div>
-  				</div>
+      <h1 class="text-center">What are you waiting for?</h1>
+      <div class="row">
+        <div class="col-sm-6" style="text-align:right;">
+          <a class="btn btn-info btn-round" href="{{site.baseurl}}/about/">Learn More About FoodSpan</a>
         </div>
-			</div>
-		</div>
-	</div>
+        <div class="col-sm-6">
+          <a class="btn btn-success btn-round" href="{{site.baseurl}}/shop/">Take Me To The Shop</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
