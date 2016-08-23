@@ -4,7 +4,7 @@ title: Welcome to FoodSpan
 ---
 
 <div class="container" style="padding-top:10px;">
-  <div class="card" style="background-image: url('{{site.baseurl}}/img/kitchen.jpg');background-size: cover;background-position:center;" />
+  <div class="card" style="background-image: url('{{site.baseurl}}/img/kitchen.jpg');background-size: cover;background-position:center;">
     <div class="content">
       <div class="row" style="padding-top:50px;">
         <div class="col-sm-4" style="text-align:right;">
@@ -138,7 +138,7 @@ title: Welcome to FoodSpan
       <div class="card">
         <div class="content">
           <h2>Latest Blog Post</h2>
-					<h6>{{ post.date | date: "%b %-d, %Y" }} {% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</h6>
+					<h6>{{ post.date | date: "%b %-d, %Y" }} {% if post.author %} • {{ post.author }}{% endif %}</h6>
 					<a href="{{ post.url | prepend: site.baseurl }}">
 						<h3>{{ post.title }}</h3>
 					</a>
