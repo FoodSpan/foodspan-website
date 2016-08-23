@@ -4,12 +4,12 @@ title: Welcome to FoodSpan
 ---
 
 <div class="container" style="padding-top:10px;">
-  <div class="card" style="background-image: url('{{site.baseurl}}/img/kitchen.jpg');background-size: cover;background-position:center;">
+  <div class="card" style="background-image: url('{{site.baseurl}}/img/kitchen.jpg');background-size: cover;background-position:center;" />
     <div class="content">
       <div class="row" style="padding-top:50px;">
         <div class="col-sm-4" style="text-align:right;">
           <div class="card" style="max-width:50%;margin-left: auto;margin-right: auto;">
-            <img class="img-rounded img-responsive" src="{{site.baseurl}}/img/logo.png" alt="Food Span Logo">
+            <img class="img-rounded img-responsive" src="{{site.baseurl}}/img/logo.png" alt="Food Span Logo" />
           </div>
         </div>
         <div class="col-sm-8">
@@ -142,9 +142,7 @@ title: Welcome to FoodSpan
 					<a href="{{ post.url | prepend: site.baseurl }}">
 						<h3>{{ post.title }}</h3>
 					</a>
-					<p>
-						{{post.excerpt}}
-					</p>
+					{{post.excerpt}}
 					<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-simple">
 						<i class="material-icons">subject</i> Read Article
 					</a>

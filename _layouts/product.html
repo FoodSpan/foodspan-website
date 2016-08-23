@@ -50,13 +50,12 @@ layout: shop
             </h4>
           </div>
           <div class="panel-body">
-            <p>{{page.content | markdownify}}</p>
+            {{page.content | markdownify}}
           </div>
         </div>
-       </div>
-       <div class="text-right">
-          <button class="btn btn-rose btn-round">Add to Cart <i class="material-icons">shopping_cart</i></button>
-       </div>
+      </div>
+      <div class="text-right">
+        <button class="btn btn-rose btn-round">Add to Cart <i class="material-icons">shopping_cart</i></button>
       </div>
     </div>
   </div>
@@ -102,14 +101,14 @@ layout: shop
     <div class="col-sm-4">
       <div class="card card-product">
         <div class="card-image">
-          <a href="{{site.baseurl}}/{{product.url}}">
+          <a href="{{site.baseurl}}{{product.url}}">
             <img class="img" src="{% if product.image1 %}{{site.baseurl}}/img/shop/{{product.image1}}{% else %}{{site.baseurl}}/img/shop/default.png{% endif %}" alt="Product Image" />
           </a>
         </div>
 
         <div class="content">
           <h4 class="card-title">
-            <a href="{{site.baseurl}}/{{product.url}}">{{product.name}}</a>
+            <a href="{{site.baseurl}}{{product.url}}">{{product.name}}</a>
           </h4>
           <div class="card-description">
             {{product.short}}
