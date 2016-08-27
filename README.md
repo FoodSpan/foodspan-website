@@ -63,11 +63,11 @@ Configuration file: /Users/matthew.wang/github/foodspan-website/_config.yml
                     done in 0.605 seconds.
  Auto-regeneration: enabled for '/Users/matthew.wang/github/foodspan-website'
 Configuration file: /Users/matthew.wang/github/foodspan-website/_config.yml
-    Server address: http://127.0.0.1:4000/foodspan/
+    Server address: http://127.0.0.1:4000/
   Server running... press ctrl-c to stop.
 
 ```
 
-Visit what follows the "Server address:" line (which is normally [http://127.0.0.1:4000/foodspan/](http://127.0.0.1:4000/foodspan/), but that might change soon)!
+Visit what follows the "Server address:" line (which is normally [http://127.0.0.1:4000/](http://127.0.0.1:4000/), but that might change soon)!
 
 And voila! Everything should work for you. If something isn't, please let me know on our [issues tracker](https://github.com/FoodSpan/foodspan-website/issues).
