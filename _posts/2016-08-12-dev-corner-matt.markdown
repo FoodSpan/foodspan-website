@@ -59,7 +59,7 @@ And yeah, that's what my weekday schedule looks like during the summer. Not part
 
 <img class="img-responsive img-thumbnail" src="{{site.baseurl}}/img/blog/matt-dev-1.png" alt="Website development." />
 
-Marshal McLuhan once said:
+Marshall McLuhan once said:
 
 >We become what we behold. We shape our tools, and thereafter our tools shape us.
 
