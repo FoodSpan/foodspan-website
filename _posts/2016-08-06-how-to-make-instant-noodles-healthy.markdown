@@ -2,7 +2,7 @@
 layout: post
 title:  "6 Amazing Tips and Tricks to Make Instant Noodles Healthier and Tastier!"
 date:   2016-08-06 21:58:07 -0400
-categories: news
+categories: food
 image: instant-noodles-1.jpg
 author: "Matthew Wang"
 ---

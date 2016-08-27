@@ -2,7 +2,7 @@
 layout: post
 title:  "She Put Her Onion Roots in Water... You'll Never Believe What Happens Next!"
 date:   2016-08-08 16:10:00 -0500
-categories: news
+categories: food
 image: regrow-food-main.jpg
 author: "Nina Lam"
 ---
