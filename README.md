@@ -4,6 +4,8 @@
 
 Here, you can find the code that goes behind making the FoodSpan website as awesome as possible!
 
+The code for our webapp, [WebSpan](https://foodspan.ca/webspan/), is at [this repo](https://github.com/FoodSpan/webspan).
+
 ## Resources
 
 Here's a list of all the awesome resources we've used to make this FoodSpan Website possible!
