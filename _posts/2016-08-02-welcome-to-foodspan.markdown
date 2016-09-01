@@ -3,9 +3,9 @@ layout: post
 title:  "Welcome to FoodSpan!"
 date:   2016-08-02 21:07:07 -0400
 categories: news
+author: The FoodSpan Team
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+Welcome to the FoodSpan website, and the FoodSpan Blog. Here, we hope to give you fresh news, tips, and tricks from FoodSpan and the FoodSpan community, and an insight to how our product was created, and why. Along the way, we'll toss in a bunch of food puns. But no spoilers!
 
-Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+Want to learn more about our product? Check out our [about page]({{site.baseurl}}/about/) to learn about our hardware product, or our [app page](https://foodspan.github.io/foodspan-app/) to find out more about our companion app systems. If you have any questions or want to contact the FoodSpan team, you can contact us [through the contact page]({{site.baseurl}}/contact/), [social media]({{site.baseurl}}/contact/), or individually from our [team page]({{site.baseurl}}/team/). Hopefully we're able to make FoodSpan the best product that it can be.
