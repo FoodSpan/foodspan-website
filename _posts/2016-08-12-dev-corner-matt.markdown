@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Developer's Corner - Matthew Wang"
-date:   2016-08-19 12:34:56 -0500
+date:   2016-08-12 12:34:56 -0500
 categories: dev
 image: devs-corner/matt.png
 author: "Matthew Wang"
