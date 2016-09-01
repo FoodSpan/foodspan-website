@@ -6,6 +6,15 @@ type: page
 ---
 <div class="main main-raised" style="padding-top:100px;">
   <div class="container">
+    <div class="alert alert-info">
+      <div class="alert-icon">
+        <i class="material-icons">info_outline</i>
+      </div>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <b>Hey there!</b> Our chefs are still cooking up our shop in the kitchen, so you won't be able to purchase anything just yet.
+    </div>
     <h2 class="title">Cart <i class="material-icons">shopping_cart</i></h2>
     <div class="table-responsive">
       <table class="table table-shopping">
@@ -86,7 +95,7 @@ type: page
               <small>$</small>119.97
             </td>
             <td colspan="3" class="text-right">
-              <button type="button" class="btn btn-rose btn-round">Complete Purchase <i class="material-icons">keyboard_arrow_right</i></button>
+              <button type="button" class="btn btn-rose btn-round" data-toggle="modal" data-target="#purchaseAlert">Complete Purchase <i class="material-icons">keyboard_arrow_right</i></button>
             </td>
           </tr>
         </tbody>
@@ -94,34 +103,79 @@ type: page
     </div>
   </div>
 </div>
-<div class="features text-center">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="info">
-        <div class="icon icon-info">
-          <i class="material-icons">local_shipping</i>
+<div class="container" style="padding-top:20px;">
+  <div class="features text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-product">
+          <div class="content">
+            <div class="info">
+              <div class="icon icon-info">
+                <i class="material-icons">local_shipping</i>
+              </div>
+              <h4 class="info-title">Delivers to your Home</h4>
+              <p>After getting your awesome FoodSpan purchase, we'll ship it straight to your address! If you live in Canada, we'll ship with Canada Post for a nominal fee. It'll be at your house within 9 business days. If you live outside of Canada, it'll cost a bit more and you'll have to pay for customs: we can't guarantee a time. That being said, we're working on connecting FoodSpan to countries all over the world!</p>
+            </div>
+          </div>
         </div>
-        <h4 class="info-title">Fast Delivery </h4>
-        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="info">
-        <div class="icon icon-success">
-          <i class="material-icons">verified_user</i>
+      <div class="col-md-4">
+        <div class="card card-product">
+          <div class="content">
+            <div class="info">
+              <div class="icon icon-success">
+                <i class="material-icons">verified_user</i>
+              </div>
+              <h4 class="info-title">Refunds and Warranty</h4>
+              <p>We want to make sure that FoodSpan is an amazing experience for you, but if something goes wrong, we want to help. If you're not satisfied with our product, you can return it and receive a refund on your purchase; and if something breaks or goes wrong within six months of your purchase, we're happy to replace it. <a data-toggle="modal" data-target="#policyModal">Read more on our policy here.</a></p>
+            </div>
+          </div>
         </div>
-        <h4 class="info-title">Refund Policy</h4>
-        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
       </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="info">
-        <div class="icon icon-rose">
-          <i class="material-icons">favorite</i>
+      <div class="col-md-4">
+        <div class="card card-product">
+          <div class="content">
+            <div class="info">
+              <div class="icon icon-rose">
+                <i class="material-icons">favorite</i>
+              </div>
+              <h4 class="info-title">Made With Love</h4>
+              <p>All of our products are made with the blood, sweat, and tears of joy from our FoodSpan team. We've put our 100% into making everything here. We're dedicated towards making a dent in the behemoth of food insecurity, with FoodSpan. Hopefully you'll love it as much as we do.</p>
+            </div>
+          </div>
         </div>
-        <h4 class="info-title">Made With Love</h4>
-        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="policyModal" tabindex="-1" role="dialog" aria-labelledby="policyLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h3 id="policyLabel">Warranty and Refund Policy</h3>
+        <p>
+          FoodSpan will offer a thirty-day return policy, allowing customers to mail back their unused purchase within thirty days after receiving the shipment and at their own expense in order to receive a full refund. We will have a limited warranty policy allowing for a refund or replacement of the components of a FoodSpan product if they display signs of defection due to workmanship in the six months prior to purchase; this warranty does not cover any problems due to damage inflicted upon the products, and transportation will be paid for by FoodSpan in these instances.
+        </p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn btn-simple" data-dismiss="modal">Go back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="purchaseAlert" tabindex="-1" role="dialog" aria-labelledby="purchaseAlertLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h3 id="purchaseAlertLabel">Our shop is still in the works.</h3>
+        <p class="lead">
+          As such, you can't actually purchase anything yet. We'll let you know when you can!
+        </p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn btn-simple" data-dismiss="modal">Go back</button>
       </div>
     </div>
   </div>
