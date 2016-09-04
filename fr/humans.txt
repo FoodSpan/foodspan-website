@@ -12,6 +12,9 @@ Note: This guy deserves a lot of credit: originally coming on as a backend devel
 Lead Graphic Designer: Mary Jiang
 Note: Mary put in a lot of work and effort, she deserves a lot of thanks! She worked tirelessly to make these amazing designs, and our site wouldn't look clean without them.
 
+Main French Translator: Arthur Huy
+Note: Arthur got up at 3 AM (time zones, amirite?) to help us to do FoodSpan work. Huge shoutout for dedication!
+
 Team Lead: Melvin Wang
 GitHub: wmmc88
 Note: Melvin straight up pulled all nighters for his team regularly, one of the most dedicated team leads. Even if he was having a bad day, he made sure that we could solve all of our problems.
@@ -28,6 +31,14 @@ Note: Aman went hard in the paint on the hardware, especially the display. His d
 
 Team Mentor: Patrick Marchand
 Note: Patrick took his time out of his busy work schedule to help us out, kids that he didn't know, make FoodSpan awesome! His feedback and professional insight was amazing, and we're forever grateful.
+
+Website Feedback Crew
+These people gave feedback on our website to make sure it looks awesome! Huge shoutout to them!
+
+Yu Hong
+Christopher Mohan
+Nyle Arora
+Bill Tang
 
 /* SITE */
 
