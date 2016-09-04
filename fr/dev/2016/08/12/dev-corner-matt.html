@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Developer&#39;s Corner - Matthew Wang</title>
+  <meta name="description" content="Hey there! Welcome to Developer’s Corner, a segment of the FoodSpan blog where we give you insight on how FoodSpan is developed! Hopefully we’ll be able to m..." />
+  <meta name="keywords" content="FoodSpan, food, insecurity, product, fridge, refridgerator, save, waste, foodspan, webspan">
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/material-kit.min.css" />
+  <link rel="stylesheet" href="/css/animate.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <link rel="stylesheet" href="/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' />
+
+  <script src="/js/google-analytics.js"></script>
+  <!-- ACCESSIBILITY PASSOVER CODE
+  <script src="/js/tota11y.min.js"></script>
+-->
+
+  <link rel="canonical" href="https://foodspan.ca/dev/2016/08/12/dev-corner-matt.html" />
+  <link rel="alternate" type="application/rss+xml" title="FoodSpan" href="https://foodspan.ca/feed.xml" />
+  <link type="text/plain" rel="author" href="https://foodspan.ca/humans.txt" />
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top" style="background-color:#98DA8E;color:white;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-container" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">FoodSpan</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-container">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/about/">A propos <span class="sr-only">About the FoodSpan Product</span></a>
+        </li>
+        <li>
+          <a href="/blog/">Blog <span class="sr-only">The FoodSpan Blog</span></a>
+        </li>
+        <li>
+          <a href="/shop/">Boutique <span class="sr-only">The FoodSpan Shop</span></a>
+        </li>
+        <li>
+          <a href="/team/">Notre Equipe <span class="sr-only">About the FoodSpan Team</span></a>
+        </li>
+        <li>
+          <a href="/contact/">Contactez-Nous <span class="sr-only">Contact the FoodSpan Team</span></a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="https://foodspan.github.io/foodspan-app/" class="btn btn-white btn-raised btn-round">Application Mobile <span class="sr-only">The FoodSpan Mobile Companion App</span></a>
+        </li>
+        <li>
+          <a href="/webspan/" class="btn btn-white btn-raised btn-round">
+            WebSpan <span class="sr-only">The FoodSpan Web Companion App</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container">
+  <div class="alert alert-warning">
+		 <div class="alert-icon">
+			<i class="material-icons">warning</i>
+		</div>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true"><i class="material-icons">clear</i></span>
+		</button>
+    <b>Désolé,</b> mais cette partie de notre site Web ne sont pas en français encore. Nous nous excusons pour le dérangement.
+	</div>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="card">
+      <img class="img-responsive" alt="Blog Post Image" src="/img/blog/devs-corner/matt.png">
+      <div class="content">
+        <header class="post-header">
+          <h1 class="title" itemprop="name headline">Developer's Corner - Matthew Wang</h1>
+          <p class="post-meta"><time datetime="2016-08-12T13:34:56-04:00" itemprop="datePublished">Aug 12, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Matthew Wang</span></span></p>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+          <p><strong>Hey there!</strong> Welcome to Developer’s Corner, a segment of the FoodSpan blog where we give you insight on how FoodSpan is developed! Hopefully we’ll be able to make this a weekly segment, looking into product development, website development, mobile apps, and anything else tech related to FoodSpan. In addition, we’ll get different devs every week, so you get to meet the FoodSpan dev team!</p>
+
+<p><img class="img-responsive img-circle" src="/img/team/matt.png" style="max-width:25%;" alt="Picture of Matt Wang" /></p>
+
+<p>First things first, a formal introduction. I’m <strong>Matthew Wang</strong> (though people call me <strong>Matt</strong>), your lead developer: I’m the team lead for Website and Application Development, and helper with Product Development. In English, that means I’ve coded this website, web application (WebSpan), and our mobile companion apps, with the help of our awesome dev team! In addition, I help with product development, marketing, digital design, and anything else that needs help.</p>
+
+<h2 id="why-foodspan">Why FoodSpan</h2>
+
+<p><img class="img-responsive" src="/img/logo.png" style="max-width:25%;" alt="Picture of Matt Wang" /></p>
+
+<p>I wasn’t part of the original 8 people in our DE project: I was brought onboard for my web development skills, but also because I was pretty interested in the idea of FoodSpan. Since then, I’ve put my blood, sweat, and some tears into the project. Originally, I was supposed to be a web developer, but it turned out that they also needed app, backend, and product development skills. I rose to the challenge, and while it’s been pretty hard, I’ve got respect for the FoodSpan team.</p>
+
+<p>I’m pretty happy to be working on FoodSpan, and hopefully we’re able to make a difference with food insecurity.</p>
+
+<h2 id="a-normal-weekday">A Normal Weekday</h2>
+
+<p>I can’t say that I’m used to a “work schedule” (being a teenager who only works part-time), but I can fill you in on what my typical day looks like:</p>
+
+<p><strong>8:00 AM</strong> - Wake Up, Shower</p>
+
+<p><strong>8:30 AM</strong> - Self-cooked Breakfast (I like eggs, so that usually is part of the meal)</p>
+
+<p><strong>9:30 AM</strong> - Browse Internet (Reddit, The Economist, NYT, etc.)</p>
+
+<p><strong>10:00 AM</strong> - Work Period 1 (normally non-FoodSpan related)</p>
+
+<p><strong>12:30 PM</strong> - Self-cooked Lunch (Usually it’s Udon noodles + some sort of meat and vegetables. I like Japanese food!)</p>
+
+<p><strong>1:00 PM</strong> - Rec Time (Video Games, Starbucks, Movie, etc.)</p>
+
+<p><strong>3:00 PM</strong> - Work Period 2 (normally FoodSpan related work)</p>
+
+<p><strong>5:30 PM</strong> - Rec Time</p>
+
+<p><strong>6:00 PM</strong> - Dinner</p>
+
+<p><strong>7:00 PM</strong> - Prep for Meeting + Finish Extra Work</p>
+
+<p><strong>8:00 PM</strong> - FoodSpan Team Meeting (yep, every single day!)</p>
+
+<p><strong>10:30 PM</strong> - Meeting ends, Rec Time (normally when I <a href="https://twitch.tv/malsf21">stream</a>)</p>
+
+<p><strong>12:30 AM</strong> - Shower, Go to Bed</p>
+
+<p><strong>1:00 AM</strong> - Sleeeeeeep</p>
+
+<p>And yeah, that’s what my weekday schedule looks like during the summer. Not particularly weird or anything, but I do go hard in the paint for FoodSpan. I’m a bit sleep-deprived somedays on crunches (for example, we did a 12 hour crunch to figure out some kinks in the display), but it’s mostly because I actually care about our product. Plus, it’s pretty fun, and educational.</p>
+
+<h2 id="worktools">Worktools</h2>
+
+<p><img class="img-responsive img-thumbnail" src="/img/blog/matt-dev-1.png" alt="Website development." /></p>
+
+<p>Marshall McLuhan once said:</p>
+
+<blockquote>
+  <p>We become what we behold. We shape our tools, and thereafter our tools shape us.</p>
+</blockquote>
+
+<p>What tools you use are pretty important, and that’s no different in any form of development. I’m passionate about the technology stack that I do use, and it’s pretty cool stuff. Let’s go over what tools and applications I love to use.</p>
+
+<h3 id="applications">Applications</h3>
+
+<ul>
+  <li><a href="https://github.com/malsf21">GitHub</a> is a Git-based version control system, and it’s pretty damn popular. We host all of our open-source code on GitHub, at our <a href="https://github.com/FoodSpan">organization</a>.</li>
+  <li><a href="https://atom.io/">Atom</a> is my text editor of choice (pictured). It has a robust feature set, even better extendability, and it’s made by the guys at GitHub. It works with every language, has thousands of plugins, and feels <em>pretty awesome</em>.</li>
+  <li><a href="http://www.adobe.com/ca/products/photoshop.html">Adobe Photoshop</a> is the industry standard for image-manipulation, and I’m lucky enough to have a school license for it. We’ve used the Adobe suite to make logos, banners, mockups, and most other images on the site.</li>
+  <li><a href="https://discordapp.com/">Discord</a> is our VOIP service. It’s server-based, has different channels, varies member permissions, works on browsers and all other platforms, and most importantly, is <strong>free</strong>.</li>
+  <li><a href="https://www.meistertask.com">Meistertask</a> is our Trello-like organization board, that lets us figure out what work we need to do and when. Keeps us agile!</li>
+</ul>
+
+<h3 id="platforms-frameworks-and-libraries">Platforms, Frameworks, and Libraries</h3>
+
+<ul>
+  <li><a href="https://jekyllrb.com/">Jekyll</a> is the static-site generator that we use to code and maintain this site. It makes writing blog posts like this a breeze, editing cross-site code a walk in the park, and general web development a piece of cake.</li>
+  <li><a href="http://ionic.io/">Ionic</a> is the mobile cross-app framework that we use to make our FoodSpan mobile companion apps. Ionic is based on web technologies, which means that our app works on iOS, Android, and even the Windows Phone! Plus, cool CSS animations.</li>
+  <li><a href="https://www.arduino.cc/">Arduino</a> is the microcontroller that we used for our product prototype: it has a vibrant community, awesome set of features and plugins, and looks pretty sleek. In addition, they have their own IDE and product set. Cool!</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Hopefully you enjoyed this edition of developer’s corner! If you want to contact me, or anybody else on the FoodSpan team, check out our <a href="/team/">team page</a>. I also have a <a href="https://matthewwang.me">website</a> if you’re into that kinda stuff.</p>
+
+<p>Until next time!</p>
+
+        </div>
+      </div>
+    </div>
+  </article>
+  <h2>Recommended Articles</h2>
+  <div class="row">
+    
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="img-responsive" alt="Blog Post Image" src="/img/blog/superfoods/berries.png">
+          <div class="content">
+            <h4>
+              <a href="/food/2016/08/15/top-ten-superfoods.html">Top Ten Superfoods to Fuel YOUR Day!</a>
+            </h4>
+            <h4><small>Aug 15, 2016</small></h4>
+            <p>Superfoods are super-cool, and can help you become super healthy! Let’s check out our top ten super superfoods!</p>
+
+
+            <a href="/food/2016/08/15/top-ten-superfoods.html" class="btn btn-simple">
+  						<i class="material-icons" aria-hidden="true">subject</i> Read Article
+  					</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="img-responsive" alt="Blog Post Image" src="/img/blog/devs-corner/matt.png">
+          <div class="content">
+            <h4>
+              <a href="/dev/2016/08/12/dev-corner-matt.html">Developer's Corner - Matthew Wang</a>
+            </h4>
+            <h4><small>Aug 12, 2016</small></h4>
+            <p><strong>Hey there!</strong> Welcome to Developer’s Corner, a segment of the FoodSpan blog where we give you insight on how FoodSpan is developed! Hopefully we’ll be able to make this a weekly segment, looking into product development, website development, mobile apps, and anything else tech related to FoodSpan. In addition, we’ll get different devs every week, so you get to meet the FoodSpan dev team!</p>
+
+
+            <a href="/dev/2016/08/12/dev-corner-matt.html" class="btn btn-simple">
+  						<i class="material-icons" aria-hidden="true">subject</i> Read Article
+  					</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="img-responsive" alt="Blog Post Image" src="/img/blog/regrow-food-main.jpg">
+          <div class="content">
+            <h4>
+              <a href="/food/2016/08/08/food-that-regrows-itself.html">She Put Her Onion Roots in Water... You'll Never Believe What Happens Next!</a>
+            </h4>
+            <h4><small>Aug 8, 2016</small></h4>
+            <p>There’s no doubt about it: food is expensive. The average Canadian household spends over <a href="http://www5.statcan.gc.ca/cansim/a05?lang=eng&amp;id=2030028"><strong>$675 a month</strong></a> on food, with $490 of that being store-bought food. No matter how much you try to avoid it, the supermarket often becomes your second home.</p>
+
+
+            <a href="/food/2016/08/08/food-that-regrows-itself.html" class="btn btn-simple">
+  						<i class="material-icons" aria-hidden="true">subject</i> Read Article
+  					</a>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+
+    <footer class="footer footer-black">
+	<div class="container">
+		<a href="/">FoodSpan</a>
+		<ul class="pull-center">
+			<li>
+				<a href="/about/">A propos <span class="sr-only">About the FoodSpan Product</span></a>
+			</li>
+			<li>
+				<a href="/blog/">Blog <span class="sr-only">The FoodSpan Blog</span></a>
+			</li>
+			<li>
+				<a href="/shop/">Boutique <span class="sr-only">The FoodSpan Shop</span></a>
+			</li>
+			<li>
+				<a href="/team/">Notre Equipe <span class="sr-only">About the FoodSpan Team</span></a>
+			</li>
+			<li>
+				<a href="/contact/">Contactez-Nous <span class="sr-only">Contact the FoodSpan Team</span></a>
+			</li>
+		</ul>
+
+		<ul class="social-buttons pull-right">
+			<li>
+				<a href="https://twitter.com/FoodSpanCA" target="_blank" class="btn btn-just-icon btn-simple">
+					<i class="fa fa-twitter"></i> <span class="sr-only">FoodSpan Twitter Page</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/FoodSpanCA/" target="_blank" class="btn btn-just-icon btn-simple">
+					<i class="fa fa-facebook-square"></i> <span class="sr-only">FoodSpan Facebook Page</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/FoodSpan" target="_blank" class="btn btn-just-icon btn-simple">
+					<i class="fa fa-github"></i> <span class="sr-only">FoodSpan GitHub Organisation</span>
+				</a>
+			</li>
+		</ul>
+
+	</div>
+</footer>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/material.min.js"></script>
+<script src="/js/bootstrap-datepicker.min.js"></script>
+<script src="/js/jquery.dropdown.min.js"></script>
+<script src="/js/material-kit.min.js"></script>
+
+
+  </body>
+
+</html>
