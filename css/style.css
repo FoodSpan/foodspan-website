@@ -1,22 +1,20 @@
-@media (min-width: @screen-md-min) {
-  @supports (display:flex){
-    .row {
-      display: -webkit-box;
-      display: -mox-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .row > [class*='col-'] {
-      display: flex;
-      -webkit-box-flex:1;
-      -moz-box-flex:1;
-      -webkit-flex:1;
-      -ms-flex:1;
-      flex:1;
-      flex-direction: column;
-    }
+@supports (display:flex){
+  .row-profile {
+    display: -webkit-box;
+    display: -mox-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row-profile > [class*='col-'] {
+    display: flex;
+    -webkit-box-flex:1;
+    -moz-box-flex:1;
+    -webkit-flex:1;
+    -ms-flex:1;
+    flex:1;
+    flex-direction: column;
   }
 }
 
