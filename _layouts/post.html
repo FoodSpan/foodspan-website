@@ -18,10 +18,10 @@ layout: default
     </div>
   </article>
   <h2>Recommended Articles</h2>
-  <div class="row">
+  <div class="row row-profile">
     {% for post in site.posts limit:3 %}
       <div class="col-sm-4">
-        <div class="card">
+        <div class="card card-product">
           <img class="img-responsive" alt="Blog Post Image" src="{% if post.image %}{{site.baseurl}}/img/blog/{{post.image}}{% else %}{{site.baseurl}}/img/blog/default.png{% endif %}">
           <div class="content">
             <h4>
