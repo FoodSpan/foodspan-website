@@ -1,31 +1,28 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <meta name="keywords" content="FoodSpan, food, insecurity, product, fridge, refridgerator, save, waste, foodspan, webspan">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="keywords" content="FoodSpan, food, insecurity, product, fridge, refridgerator, save, waste, foodspan, webspan">
 
-  <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" />
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
-  <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" />
-  <link rel="stylesheet" href="{{ "/css/material-kit.min.css" | prepend: site.baseurl }}" />
-  <link rel="stylesheet" href="{{ "/css/animate.min.css" | prepend: site.baseurl }}" />
-  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}" />
+    <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{ "/css/material-kit.min.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{ "/css/animate.min.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}" />
 
-  <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}" />
-  <link rel="stylesheet" type="text/css" href="{{ "/css/fonts.css" | prepend: site.baseurl }}" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "/css/fonts.css" | prepend: site.baseurl }}" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' />
 
-  <script src="{{ "/js/google-analytics.js" | prepend: site.baseurl }}"></script>
-  <!-- ACCESSIBILITY PASSOVER CODE
-  <script src="{{ "/js/tota11y.min.js" | prepend: site.baseurl }}"></script>
--->
+    <script src="{{ "/js/google-analytics.js" | prepend: site.baseurl }}"></script>
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link type="text/plain" rel="author" href="{{site.url}}{{site.baseurl}}/humans.txt" />
-</head>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link type="text/plain" rel="author" href="{{site.url}}{{site.baseurl}}/humans.txt" />
+  </head>
