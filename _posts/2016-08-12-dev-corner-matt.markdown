@@ -85,3 +85,5 @@ What tools you use are pretty important, and that's no different in any form of 
 Hopefully you enjoyed this edition of developer's corner! If you want to contact me, or anybody else on the FoodSpan team, check out our [team page]({{site.baseurl}}/team/). I also have a [website](https://matthewwang.me) if you're into that kinda stuff.
 
 Until next time!
+
+*You can learn more about Matt on his [GitHub](https://github.com/malsf21), [website](https://matthewwang.me/), or [his blog](https://blog.matthewwang.me/).*

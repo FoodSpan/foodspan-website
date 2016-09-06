@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why Do We Waste Food"
-date:   2016-08-20 16:10:00 -0500
+date:   2016-08-24 16:10:00 -0500
 categories: food
 author: "Loic Darboux"
 image: waste-berries.jpg
