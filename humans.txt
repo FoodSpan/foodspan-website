@@ -41,6 +41,10 @@ Note: Aman went hard in the paint on the hardware, especially the display. His d
 Team Mentor: Patrick Marchand
 Note: Patrick took his time out of his busy work schedule to help us out, kids that he didn't know, make FoodSpan awesome! His feedback and professional insight was amazing, and we're forever grateful.
 
+John Mace for being an inspiration to the development and design team.
+
+Jack Sarick for being the worst, but best possible mentor.
+
 /* SITE */
 
 Developed for and with: HTML5, CSS3
