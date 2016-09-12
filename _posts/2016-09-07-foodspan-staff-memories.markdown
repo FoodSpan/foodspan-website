@@ -4,7 +4,6 @@ title:  "The FoodSpan Staff's Best Memories"
 date:   2016-09-01 16:10:00 -0500
 categories: staff
 author: "Matthew Wang"
-published: false
 ---
 
 As our final time crunch for FoodSpan ends, we asked our FoodSpan staff what their fondest memories of FoodSpan were. Here are their responses:
@@ -35,3 +34,7 @@ My fondest memory would be back at McMaster when FoodSpan won our SHAD campus co
 ## Nathan Maguire, Intellectual Property Specialist
 
 My fondest memory is just working on a project with great people from SHAD, over a month after the program ended.
+
+## Matthew Wang, Lead Developer
+
+Finishing a twelve hour crunch of work. That small break before the next crunch... feels sooooo good.
