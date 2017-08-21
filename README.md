@@ -1,4 +1,4 @@
-# The FoodSpan Website
+# [The FoodSpan Website](https://foodspan.github.io)
 
 [![Build Status](https://travis-ci.org/FoodSpan/foodspan-website.svg?branch=master)](https://travis-ci.org/FoodSpan/foodspan-website)
 
@@ -6,7 +6,7 @@
 
 Here, you can find the code that goes behind making the FoodSpan website as awesome as possible!
 
-The code for our webapp, [WebSpan](https://foodspan.ca/webspan/), is at [this repo](https://github.com/FoodSpan/webspan).
+The code for our webapp, [WebSpan](https://matthewwang.me/foodspan-website/webspan/index.php), is at [this repo](https://github.com/FoodSpan/webspan).
 
 ## Resources
 
